@@ -1,0 +1,43 @@
+<div class="cart-container" *ngIf="total !== 0; else emptyCartMessage">
+  <div class="cart-panel">
+    <div class="cart-item" *ngFor="let cartProduct of cartProducts">
+      <img src="{{ cartProduct.url }}">
+      <div class="cart-item-details">
+        <p><strong>{{ cartProduct.name }}</strong></p>
+        <p>${{ cartProduct.price }}</p>
+        <p>Amount: <input type="number" min="0" [(ngModel)]="cartProduct.amount"
+            (ngModelChange)="modelChanged(cartProduct)" class="number-input" />
+        </p>
+      </div>
+    </div>
+
+    <h3>Total: ${{total}}</h3>
+  </div>
+
+  <div class="cart-panel">
+    <form class="form" #form="ngForm" (ngSubmit)="onSubmit()">
+      <label>Full name</label>
+      <input required minlength="3" maxlength="20" class="form-control form-margin" type="text" name="customerName"
+        [(ngModel)]="customerName" placeholder="(minimum 3 characters)">
+
+      <label>Address</label>
+      <input required minlength="6" maxlength="30" class="form-control form-margin" type="text" name="customerAddress"
+        [(ngModel)]="customerAddress" placeholder="(minimum 6 characters)">
+
+      <label>Credit card number</label>
+      <input required minlength="16" maxlength="16" class="form-control form-margin" type="text"
+        name="customerCreditCard" [(ngModel)]="customerCreditCard" (keypress)="allowOnlyNumbers($event)"
+        placeholder="(16-digit number)">
+
+      <small class="form-text form-margin text-muted">We'll never share your payment details with anyone else.</small>
+
+      <input type="submit" value="Submit" [disabled]="form.invalid" class="btn btn-primary">
+    </form>
+  </div>
+</div>
+
+<ng-template #emptyCartMessage>
+  <div class="empty-cart-message">
+    <p><em>The cart is empty.</em></p>
+  </div>
+</ng-template>

@@ -1,0 +1,5 @@
+udacity\com\model\Person.class
+udacity\com\repo\PersonRepo.class
+udacity\com\secuirty\SpringSecurityConfig.class
+udacity\com\controller\PersonController.class
+udacity\com\PeopleApplication.class

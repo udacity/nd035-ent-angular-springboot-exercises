@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="angular_springboot" />
+        <module name="excercise" />
+        <module name="addressbook" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="addressbook" target="18" />
+      <module name="addressbook (1)" target="18" />
+      <module name="addressbook (2)" target="18" />
+      <module name="angular_springboot" target="1.8" />
+      <module name="excercise" target="18" />
+      <module name="excercise (1)" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="addressbook" options="-parameters" />
+      <module name="addressbook (1)" options="-parameters" />
+      <module name="addressbook (2)" options="-parameters" />
+      <module name="angular_springboot" options="-parameters" />
+      <module name="excercise" options="-parameters" />
+      <module name="excercise (1)" options="-parameters" />
+    </option>
+  </component>
+</project>

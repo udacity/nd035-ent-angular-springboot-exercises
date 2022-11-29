@@ -1,0 +1,19 @@
+<div class="people-container">
+  <div class="people-index">
+    <h2>AddressBook</h2>
+    <br>
+    <br>
+    <table style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Address</th>
+      </tr>
+      <tr *ngFor="let people of peoples">
+        <td>{{people.name}}</td>
+        <td>{{people.phoneNumber}}</td>
+        <td>{{people.address}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
