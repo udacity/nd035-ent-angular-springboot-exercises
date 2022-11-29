@@ -1,37 +1,14 @@
-# Purpose of This Repo
-
-This repo is meant to be used to keep things organized during content development and act as the source of truth for all projects and exercises related to this course.
 
 ## Folder Structure
 
 ### Lesson Folder
 
-This repo contains a folder for each `lesson` and one `project` folder.
+# Exercises for Angular-Spring Boot Fullstack Applications
 
-Example
-```
-lesson-1-hello
-lesson-2-world
-lesson-3-foo
-lesson-4-bar
-project
-```
+You have been hired to develop an online address book. Below are the feature requirements
 
-Each `lesson` folder is named using the naming convention of `lesson-#-name-of-lesson`.
+* The address book will display the name, phone number, and address of each person in the H2 database. You will need to create a SpringBoot application to support the backend and an Angular frontend to display the information.
 
-Example
-```
-lesson-1-hello
-```
-
-Four lesson folders have been provided as a template; However, you may need to add more or possibly use less than four depending on what is needed.
-
-If you require an additional lesson folder, you can make a copy of the folder and paste it into the root directory.
-
-### Exercises Folder
-
-Each `lesson` folder contains an `exercises` folder. This `exercises` folder should contain all files and instructions necessary for the exercises along with the solution. The solutions for these exercises will be shared with students. See the `README` in the `exercises` folder for information about folder structure.
-
-### Project Folder
-
-The `project` folder should contain all files and instructions necessary for setup. If possible, a set of instructions should be provided for both Udacity workspaces and a way to work locally (for both MacOS and Windows OS). At a minimum, one set of instructions should be provided. A `README` template has been provided in the project folder. This template layout should be used to write your README.
+This course repository contains the starter code required to complete exercise tasks and the solution code to check your work against.
+* There are 7 exercises
+* Each exercise folder contains all the information necessary to complete the indicated tasks
